@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+   
+    <script src="jquery.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <body>
+
+
+        <div data-role="page" id="utama">
+            <div data-role="header">
+                <h1>FAST & FURIOUS</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <label for="text-basic" align="center">Axia</label>
+                <br>
+                <center><a href="#page2"><img src="gambar/axia.jpg" style="width:700px;height:500px;"></a></center>
+                <center><a href="#page3"><img src="gambar/alza.jpg" style="width:700px;height:500px;"></a></center>
+                
+            </div>
+            <div data-role="footer">
+                <div align="center" data-role="controlgroup" data-type="vertical">
+                   <button> <a href="#bid" >BID A CAR</a></button>
+                </div>
+            </div>
+        </div>  
+
+
+        <div data-role="page" id="bid">
+            <div data-role="header">
+                <h1>Bidding Form</h1>
+            </div>
+            <form onsubmit="return applicationform();">
+                <div data-role="main" class="ui-content">
+    
+                    <label for="text-basic">Name:</label>
+                    <input type="text" name="text-basic" id="nama" value="">
+    
+                    <label for="text-basic">Mobile Numer:</label>
+                    <input type="text" name="text-basic" id="phone" value="">
+
+                    <label for="text-basic">Car ID:</label>
+                    <input type="text" name="text-basic" id="carid" value="">
+
+                    <label for="text-basic">Car Model:</label>
+                    <input type="text" name="text-basic" id="carmodel" value="">
+    
+                    <label for="slider-fill">Bidding Price:</label>
+                    <input type="range" name="slider-fill" id="slider" value="" min="0" max="10000" step="1"
+                        data-highlight="true">
+    
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="submit" name="Submit" value="Bid">
+                        <input type="reset" value="Reset">
+                    </fieldset>
+            </form>
+        </div>
+        <div data-role="footer">
+            <div align="center" data-role="controlgroup" data-type="vertical">
+                <button><a href="#utama" >BACK</a></button>
+                <button><a href="#bidlist" >BID LIST</a></button>
+            </div>
+        </div>
+        </div>
+
+
+        <div data-role="page" id="page2">
+            <div data-role="header">
+                <h1>AXIA</h1>
+            </div>
+            <form onsubmit="return applicationform();">
+                <div data-role="main" class="ui-content">
+                    <h1 align="center">CAR DETAILS</h1>
+                    <label for="text-basic" align="center">Year made:2021</label>
+                    <label for="text-basic" align="center">Colour:White</label>
+                    <label for="text-basic" align="center">Condition:10/10</label>      
+            </form>
+        </div>
+        <div data-role="footer">
+            <div align="center" data-role="controlgroup" data-type="vertical">
+                <button><a href="#utama" >BACK</a></button>
+                <button><a href="#bid" >BID CAR</a></button>
+            </div>
+        </div>
+        </div>
+
+        <div data-role="page" id="page3">
+            <div data-role="header">
+                <h1>ALZA</h1>
+            </div>
+            <form onsubmit="return applicationform();">
+                <div data-role="main" class="ui-content">
+                    <h1 align="center">CAR DETAILS</h1>
+                    <label for="text-basic" align="center">Year made:2021</label>
+                    <label for="text-basic" align="center">Colour:White</label>
+                    <label for="text-basic" align="center">Condition:10/10</label>      
+            </form>
+        </div>
+        <div data-role="footer">
+            <div align="center" data-role="controlgroup" data-type="vertical">
+                <button><a href="#utama" >BACK</a></button>
+                <button><a href="#bid" >BID CAR</a></button>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
